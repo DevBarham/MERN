@@ -34,5 +34,20 @@ jobs:
          username:  ${{ secrets.AWS_USERNAME }}
          script: |
             echo Hello World!
+             echo Hello World!
+            ls
+            cd /home/ubuntu/memories
+            git fetch
+            git pull origin/main
+            cd client/
+            npm i && npm run build
+            sudo rm -rf /var/www/build
+            sudo mv build /var/www/
+            sudo systemctl kill nginx
+            sudo system start nginx
+            cd ..
+            cd server/
+            npm i 
+            npm start
           
          
