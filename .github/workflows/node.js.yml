@@ -36,7 +36,7 @@ jobs:
             echo Hello World!
              echo Hello World!
             ls
-            cd /home/ubuntu/memories
+            cd /home/ubuntu/MERN
             git fetch
             git pull origin/main
             cd client/
