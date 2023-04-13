@@ -44,7 +44,7 @@ jobs:
             sudo rm -rf /var/www/build
             sudo mv build /var/www/
             sudo systemctl kill nginx
-            sudo system start nginx
+            sudo systemctl start nginx
             cd ..
             cd server/
             npm i 
